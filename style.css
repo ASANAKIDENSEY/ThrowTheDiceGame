@@ -14,7 +14,7 @@ body {
   font-weight: 400;
   height: 100vh;
   color: #000;
-  background-image: linear-gradient(to top right, #e2b810 0%, #ec3b05 100%);
+  background-image: linear-gradient(to top right, #10e2db 0%, #a705ec 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,26 +57,26 @@ main {
 .score {
   font-size: 8rem;
   font-weight: 300;
-  color: #ee7d05;
+  color: #b005ee;
   margin-bottom: auto;
 }
 
-.player--active {
+.player__active {
   background-color: rgba(255, 255, 255, 0.4);
 }
-.player--active .name {
+.player__active .name {
   font-weight: 700;
 }
-.player--active .score {
+.player__active .score {
   font-weight: 400;
 }
 
-.player--active .current {
+.player__active .current {
   opacity: 1;
 }
 
 .current {
-  background-color: #ee7d05;
+  background-color: #cb05ee;
   opacity: 0.8;
   border-radius: 9px;
   color: #fff;
@@ -86,14 +86,14 @@ main {
   transition: all 0.75s;
 }
 
-.current-label {
+.current__label {
   text-transform: uppercase;
   margin-bottom: 1rem;
   font-size: 1.7rem;
   color: #eee;
 }
 
-.current-score {
+.current__score {
   font-size: 3.5rem;
 }
 
@@ -127,13 +127,13 @@ main {
   margin-right: 0.7rem;
 }
 
-.btn--new {
+.btn__new {
   top: 3rem;
 }
-.btn--roll {
+.btn__roll {
   top: 40rem;
 }
-.btn--hold {
+.btn__hold {
   top: 46rem;
 }
 
@@ -154,11 +154,15 @@ main {
   height: 10rem;
 }
 
-.player--winner {
-  background-color: #2f2f2f;
+.player__winner {
+  background-color: #3a31f2;
 }
 
-.player--winner .name {
+.player__winner .name {
   font-weight: 700;
-  color: #d50b0b;
+  color: #44e555;
+}
+
+.hidden {
+  display: none;
 }
